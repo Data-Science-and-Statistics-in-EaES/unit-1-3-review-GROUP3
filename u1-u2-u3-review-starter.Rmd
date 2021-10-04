@@ -36,7 +36,9 @@ glimpse(density)
 glimpse(solubility_hardness)
 glimpse(location_descriptions)
 ```
-
+There are `r nrow(density)` and `r ncol(density)` rows and columns for density
+There are `r nrow(solubility_hardness)` and `r ncol(solubility_hardness)`rows and columns for solubility hardness respectively.
+There are `r nrow(location_descriptions)` and `r ncol(location_description)` rows and columns for location desctiptions respectively.
 
 ### Exercise 3
 
