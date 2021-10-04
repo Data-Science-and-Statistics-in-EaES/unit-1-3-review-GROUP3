@@ -31,10 +31,12 @@ The first row represents the location of where the mineral was found. The second
 
 ### Exercise 2
 
-Remove this text, and add your answer for Exercise 2 here.
-Add code chunks as needed.
-Don't forget to label your code chunk.
-Do not use spaces in code chunk labels.
+```{r inspect-other-dataframes}
+glimpse(density)
+glimpse(solubility_hardness)
+glimpse(location_descriptions)
+```
+
 
 ### Exercise 3
 
