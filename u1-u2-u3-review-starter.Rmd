@@ -48,7 +48,9 @@ for density and solubility_hardness, each row is a different mineral: Biotite, F
 ### Exercise 3
 
 ```{r join-mineral-properties}
-
+ sand_minerals %>% 
+  full_join(density)
+ 
 ```
 
 
