@@ -35,6 +35,9 @@ The first row represents the location of where the mineral was found. The second
 glimpse(density)
 glimpse(solubility_hardness)
 glimpse(location_descriptions)
+names(density)
+names(solubility_hardness)
+names(location_descriptions)
 ```
 There are `r nrow(density)` and `r ncol(density)` rows and columns for density
 There are `r nrow(solubility_hardness)` and `r ncol(solubility_hardness)`rows and columns for solubility hardness respectively.
