@@ -24,6 +24,7 @@ solubility_hardness <- read_csv("data/solubility-hardness.csv")
 
 ```{r inspect-sand-minerals}
 glimpse(sand_minerals)
+names(sand_minerals)
 ```
 There are `r nrow(sand_minerals)` rows and there are `r ncol(sand_minerals)` variables.
 The first row represents the location of where the mineral was found. The second row represents the type of mineral collected.
