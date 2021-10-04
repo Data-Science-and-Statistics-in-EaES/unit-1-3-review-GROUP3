@@ -40,6 +40,8 @@ There are `r nrow(density)` and `r ncol(density)` rows and columns for density
 There are `r nrow(solubility_hardness)` and `r ncol(solubility_hardness)`rows and columns for solubility hardness respectively.
 There are `r nrow(location_descriptions)` and `r ncol(location_descriptions)` rows and columns for location descriptions respectively.
 
+for density and solubility_hardness, each row is a different mineral: Biotite, Feldspar, and Quartz. For location_descriptions, each row is a numerical value of 1-10, paired with a character description of what the location is defined as.
+
 ### Exercise 3
 
 Remove this text, and add your answer for Exercise 3 here.
