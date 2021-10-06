@@ -63,6 +63,11 @@ sand_mineral_properties %>%
   mutate(grains_per_location = density/location)
 ```
 
+```{r per-location-bott-ten}
+sand_mineral_properties %>%
+  mutate(grains_per_location = density/location) %>% 
+  slice_tail(n=10)
+```
 
 ### Exercise 5
 
