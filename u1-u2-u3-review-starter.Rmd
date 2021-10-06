@@ -70,10 +70,17 @@ sand_mineral_properties %>%
 ```
 ```{r arranged-density-bottom-ten-rows}
 sand_mineral_properties %>%
+  mutate(grains_per_location = density/location) %>%
   arrange(desc(density)) %>% 
   slice_tail(n=10)
 ```
-
+```{r first-last-bott-five}
+sand_mineral_properties %>%
+  mutate(grains_per_location = density/location) %>%
+  arrange(desc(density)) %>% 
+  select(minerals, grains_per_location) %>% 
+  slice_tail(n=5)
+```
 ### Exercise 5
 
 Remove this text, and add your answer for Exercise 5 here.
