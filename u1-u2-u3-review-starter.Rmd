@@ -81,6 +81,16 @@ sand_mineral_properties %>%
   select(minerals, grains_per_location) %>% 
   slice_tail(n=5)
 ```
+```{r na-removed-top-five}
+sand_mineral_properties %>%
+  mutate(grains_per_location = density/location) %>%
+  arrange(desc(density)) %>% 
+  select(minerals, grains_per_location, hardness) %>% 
+  filter(!is.na(hardness)) %>%
+  slice_head(n=5)
+
+```
+
 ### Exercise 5
 
 Remove this text, and add your answer for Exercise 5 here.
