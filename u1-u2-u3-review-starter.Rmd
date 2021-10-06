@@ -50,11 +50,11 @@ for density and solubility_hardness, each row is a different mineral: Biotite, F
 ```{r join-mineral-properties}
  sand_mineral_density <- sand_minerals %>% 
   full_join(density)
-solubility_hardness %>%
+sand_mineral_properties <- solubility_hardness %>%
   full_join(sand_mineral_density)
  
 ```
-The output has `r nrow(sand_mineral_density)` rows.
+The output sand_mineral_density has `r nrow(sand_mineral_density)` rows.
 
 ### Exercise 4
 
